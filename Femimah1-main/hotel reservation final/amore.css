@@ -1,0 +1,87 @@
+
+.overall{
+    background-image: url('images/couples\ background.jpg');;
+}
+
+.amoree{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+.image {
+    height: 70vh;
+    width: 100vw;
+   }
+   
+   img {
+     height: 60vh;
+     max-height:60vh;
+   }
+   
+   .text {
+     font-size: 19px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+     
+   }
+
+   .text h1{
+    color: #33221a;
+    text-decoration: underline;
+   }
+   .text p{
+    color:#33221a;
+    font-family: Gelasio;
+   }
+   .form-container img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    
+  }
+  .form-container p{
+    text-align: center;
+    color: #33221a;
+  }
+  
+.introtext{
+  background-color: rgba(210, 105, 30, 0.589);
+  padding: 10px;
+  font-family: 'Derringer DB';
+}
+  .introtext h1{
+text-align: center;
+font-size: 25px;
+color: #33221a;
+  }
+  .introtext p{
+    text-align: center;
+    font-size: 19px;
+    color: #33221a;
+    
+  }
+  .book-now-button {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.book-now-button a{
+    text-decoration: none;
+}
+
+.book-now-button button {
+    background-color: #b26938; /* Light Brown Color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    
+}
+
+.book-now-button button:hover {
+    background-color: #A9825D; /* Darker shade for hover effect */
+}

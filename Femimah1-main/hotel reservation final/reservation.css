@@ -1,0 +1,155 @@
+/* CSS styles */
+@import "compass";
+@import "normalize";
+@import "autoprefixer";
+
+/* New font family */
+/* You can replace 'Open Sans' with any other Google Font or any font you prefer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Basic styles and layout */
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #c7a17a, #7d5a30); /* Shades of brown */
+}
+
+form {
+  width: 60vh;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #D2B48C; /* Base brown color for form container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-container img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-container p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group.name {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+#firstname,
+#lastname {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  background: linear-gradient(45deg, #4caf50, #3e8e41);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #3e8e41, #4caf50);
+}
+
+.room-info {
+  margin-bottom: 20px;
+}
+
+.room-info img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset label {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"] {
+  display: none;
+}
+
+fieldset label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+fieldset input[type="radio"]:checked + label:before {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+fieldset label:hover:before {
+  border-color: #4caf50;
+}
